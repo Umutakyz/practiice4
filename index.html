@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form name="registrationForm" onsubmit="return validateForm()">
+            <label for="username">UserName:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="dob">Day of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select--</option>
+                <option value="US">United States</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Turkey">Turkey</option>
+            </select>
+
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies" name="hobbies" rows="4" required></textarea>
+
+            <label for="newsletter">Receive Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
